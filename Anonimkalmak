@@ -1,0 +1,32 @@
+1- Vpn (https://www.vpnbook.com/)
+2- Dns (google query: free dns server)
+3- Tor (torghost.py script)
+4- Local anonymous (macchanger -r eth0)
+
+
+#VPN
+   1 - Download vpnbook file.ovpn
+   2 - Open terminal 
+   3 - Terminal query : openvpn file.ovpn
+   
+   
+#DNS 
+   1 - find free dns server ex(google): 8.8.8.8, 8.8.4.4
+   2 - open /etc/dhcp/dhclient.conf
+   3 - #prepend domain-name-servers 127.0.0.1; / change "#" : kare işaretini kaldır örnek: prepend domain-name-servers 127.0.0.1;
+   4 - prepend domain-name-servers 127.0.0.1; / change "ip adress" : prepend domain-name-servers 8.8.8.8, 8.8.4.4;
+    
+   Bunuda yapmalısın :  
+   1 - Open /etc/resolv.conf 
+   2 - Change nameserver 8.8.8.8, 8.8.4.4
+
+#TOR
+   
+   1 - Download torghost script (https://github.com/pcdunyasitv/TORGHOST)
+   2 - Open the terminal 
+   3 - Run script torghost.py
+
+#MACCHANGE (local anonymous)
+
+   1 - Open kali terminal
+   2 - terminal query (macchanger -r <interface>)
